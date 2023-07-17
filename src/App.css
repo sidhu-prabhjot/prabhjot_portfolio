@@ -1,38 +1,557 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  color: #f5f5f5;
   display: flex;
   flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.nav-box {
+  cursor: pointer;
+}
+
+.boxes-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: white;
+  height: 100vh;
+}
+
+.nav-box {
+  flex-direction: column;
+}
+
+.nav-icon {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+}
+
+.work-box {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 5% 5% 5%;
+  border-radius: 50px;
+  background-color: #f05454;
+  transition: 0.3s;
+}
+
+.work-box:hover {
+  flex: 2;
+}
+
+.box-grid {
+  display: flex;
+  flex: 1;
+  margin: 5% 5% 2px 5%;
+}
+
+.left-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.left-column:hover {
+  flex: 2;
+}
+
+.about-me-box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 2px 0% 0%;
+  border-radius: 50px;
+  border: 4px solid #f5f5f5;
+}
+
+.nav-text {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.right-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.right-column:hover {
+  flex: 2;
+}
+
+.skills-box {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 0% 2px 2px;
+  border-radius: 50px;
+  background-color: #f5f5f5;
+  color: #121212;
+  transition: 0.3s;
+}
+
+.contact-me-box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: 2px 0% 0% 2px;
+  border-radius: 50px;
+  border: 4px solid #f5f5f5;
+  transition: 0.3s;
+}
+
+.skills-box:hover {
+  flex: 2;
+}
+
+.contact-me-box:hover {
+  flex: 2;
+}
+
+.bio-container {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  flex-direction: column;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero-text-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0% 5% 0% 0%;
+}
+
+.hero-text {
+  font-size: 4em;
+  margin: 0;
+}
+
+.hero-subtext {
+  font-size: 2em;
+  margin: 0;
+}
+
+.snippet-text-container {
+  display: flex;
+  flex: 1;
+  margin: 0% 5% 2% 0%;
+}
+
+.snippet {
+  font-size: 1.2em;
+  line-height: 1.68em;
+}
+
+/*About me section*/
+
+.about-me-section {
+  height: 100vh;
+  display: flex;
+  margin: 0% 2% 2% 2%;
+}
+
+.about-me-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: rgb(68, 68, 68);
+}
+
+.title-text-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-right: 2px;
+  color: #f5f5f5;
+}
+
+.about-me-text-container {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 2% 0% 2%;
+  border-radius: 50px;
+  color: #f5f5f5;
+  font-size: 1.2em;
+  overflow: auto;
+}
+
+/*My Work Section*/
+
+.my-work-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0% 2% 0 2%;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 4px;
+  flex: 1;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.major-container:hover {
+  flex: 6;
+}
+
+.minor-container:hover {
+  flex: 4;
+}
+
+.work-1 {
+  flex: 3;
+  margin-right: 4px;
+  overflow: hidden;
+}
+
+.work-2 {
+  flex: 2;
+}
+.work-3 {
+  flex: 2;
+  margin-right: 4px;
+}
+.work-4 {
+  flex: 3;
+}
+.work-5 {
+  flex: 1;
+  margin-right: 4px;
+}
+.work-6 {
+  flex: 1;
+}
+
+/*skills section*/
+.skills-section {
+  height: 100vh;
+  display: flex;
+  margin: 2% 2% 2% 2%;
+}
+
+.skills-container {
+  display: flex;
+  flex: 1;
+  background-color: rgb(68, 68, 68);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.skills-grid {
+  display: flex;
+  flex: 2;
+  margin: 4%;
+}
+
+.skills-left-column {
+  display: flex;
+  flex: 1;
+  margin-right: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 4px solid azure;
+}
+
+.skills-right-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 2px;
+}
+
+.cloud-container {
+  display: flex;
+  flex: 1;
+  margin-bottom: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.dev-tools-container {
+  display: flex;
+  flex: 1;
+  margin-top: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.skill-title-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.skill-title-container-first {
+  display: none;
+}
+
+.skill-title-container .hero-text {
+  color: #f5f5f5;
+}
+
+.skill-title-container .hero-subtext {
+  color: #f5f5f5;
+}
+
+/*contact me section*/
+
+.contact-section {
+  height: 80vh;
+  display: flex;
+  margin: 0% 2% 2% 2%;
+  color: #f5f5f5;
+}
+
+.contact-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  border: 8px solid #f5f5f5;
+  border-radius: 50px;
+}
+
+.small-title {
+  font-size: 2em;
+  padding-left: 20px;
+}
+
+.small-title-container {
+  display: flex;
+}
+
+.statement-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.contact-row {
+  display: flex;
+}
+
+.contact-row:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  margin-left: 20px;
+  border-radius: 50px;
+  border: 4px solid #f05454;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:first-child {
+  margin-left: 0;
+}
+
+.button:hover {
+  background-color: #30475e;
+  cursor: pointer;
+}
+
+.button-link {
+  padding-right: 20px;
+}
+
+.button-text {
+  margin: 0;
+  padding: 20px 10px 20px 30px;
+  font-size: 1.4em;
+}
+
+/*Stars*/
+.particles {
+  z-index: -1;
+}
+
+.copy-notification {
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  background-color: #30475e;
+  border-radius: 50px;
+  border: 2px solid #f5f5f5;
+}
+
+.copy-notification p {
+  padding: 2px 10px 2px 10px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .snippet {
+    font-size: 1em;
+    line-height: 1.68em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-text {
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    font-size: 3em;
+  }
+
+  .hero-subtext {
+    font-size: 1.5em;
+  }
+
+  .button-text {
+    height: 25px;
+    width: 50px;
+  }
+
+  .small-title {
+    font-size: 1.5em;
+  }
+
+  .about-me-text-container {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .snippet {
+    font-size: 1.5em;
+    line-height: 1.68em;
+  }
+
+  .nav-text {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    font-size: 4em;
+  }
+
+  .hero-subtext {
+    font-size: 1.5em;
+  }
+
+  .button-text {
+    height: 32px;
+    width: 56px;
+  }
+
+  .small-title {
+    font-size: 1.5em;
+  }
+
+  .about-me-text-container {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1441px) {
+  .snippet {
+    font-size: 1.7em;
+    line-height: 1.68em;
+  }
+
+  .nav-text {
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    font-size: 7em;
+  }
+
+  .hero-subtext {
+    font-size: 2.5em;
+  }
+
+  .button-text {
+    height: 50px;
+    width: 100px;
+  }
+
+  .small-title {
+    font-size: 2.5em;
+  }
+
+  .button-link {
+    font-size: 2em;
+    padding-right: 30px;
+  }
+
+  .copy-notification {
+    border-width: 4px;
+  }
+
+  .copy-notification p {
+    font-size: 2.5em;
+    padding: 2px 15px 2px 25px;
+  }
+
+  .about-me-text-container {
+    font-size: 1em;
   }
 }
