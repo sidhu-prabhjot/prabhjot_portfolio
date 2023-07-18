@@ -161,7 +161,7 @@
 .snippet-text-container {
   display: flex;
   flex: 1;
-  margin: 10% 5% 2% 0%;
+  margin: 5% 5% 2% 0%;
 }
 
 .snippet {
@@ -514,6 +514,10 @@
   .about-me-text-container {
     font-size: 1em;
   }
+
+  .button-link {
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 1441px) {
@@ -560,5 +564,9 @@
 
   .about-me-text-container {
     font-size: 1em;
+  }
+
+  .button-link {
+    font-size: 1.2em;
   }
 }
